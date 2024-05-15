@@ -1,0 +1,8 @@
+#!/bin/bash
+nginx -c /mnt/c/Users/segura23/first_segurainsures/config/nginx.conf
+
+# Substitute environment variables into the nginx config
+envsubst < /mnt/c/Users/segura23/first_segurainsures/config/nginx.conf.template > /mnt/c/Users/segura23/first_segurainsures/config/nginx.conf
+
+# Start NGINX with the processed configuration file
+nginx -c /mnt/c/Users/segura23/first_segurainsures/config/nginx.conf
