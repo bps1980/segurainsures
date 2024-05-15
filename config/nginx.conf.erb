@@ -1,0 +1,18 @@
+worker_processes 1;
+daemon off;
+
+error_log stderr;
+events { worker_connections 1024; }
+
+http {
+    server {
+        listen <%= ENV["PORT"] %>;
+        server_name localhost;
+
+        location / {
+            root /app;
+            index index.html index.htm;
+            try_files $uri $uri/ =404;
+        }
+    }
+}
