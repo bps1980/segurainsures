@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #005f73;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.token-icon {
+    display: block;
+    margin: 0 auto 10px; /* Centers the image and adds spacing below */
+    width: 100px; /* Sets the width of the icon */
+    height: auto; /* Maintains the aspect ratio of the icon */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 0 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
