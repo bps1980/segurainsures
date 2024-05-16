@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // Define the port to listen on
-const PORT = process.env.PORT || 3000; // Use the PORT environment variable if set, otherwise default to 3000
+const PORT = process.env.PORT || 3006; // Use the PORT environment variable if set, otherwise default to 3000
 
 // Define routes, middleware, etc.
 

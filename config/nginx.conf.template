@@ -10,13 +10,12 @@ events {
 
 http {
     server {
-        listen ${PORT};
-        server_name localhost;
+        listen 8080;
+        server_name _;
 
-        location / {
-            root /path/to/your/static/files;
-            index index.html index.htm;
-            try_files $uri $uri/ =404;
-        }
+    location / {
+        root /path/to/your/static/files;
+        index index.html index.htm;
+        try_files $uri $uri/ =404;
     }
 }
